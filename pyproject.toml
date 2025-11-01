@@ -1,0 +1,26 @@
+[project]
+name = "fastapi-ca"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.118.2,<0.119.0)",
+    "uvicorn[standard] (>=0.37.0,<0.38.0)",
+    "py-ulid (>=1.0.3,<2.0.0)",
+    "sqlalchemy (>=2.0.44,<3.0.0)",
+    "mysqlclient (>=2.2.7,<3.0.0)",
+    "alembic (>=1.17.0,<2.0.0)",
+    "dependency-injector (>=4.48.2,<5.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
